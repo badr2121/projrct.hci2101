@@ -1,0 +1,414 @@
+:root {
+    
+    --main-black: #ffffff; 
+    --deep-gray: #e0e0e0;  
+    --medium-gray: #b0b0b0; 
+    --light-bg: #1e1e1e;  
+    --dark-bg: #121212;    
+    --white: #000000;      
+    --border-color: #333333; 
+    --accent-color: #4dabf7; /
+}
+
+ .selector {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+    direction: ltr; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--main-black);
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(18, 18, 18, 0.95); 
+    box-shadow: 0 1px 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--main-black);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--medium-gray);
+}
+
+
+.hero-section {
+    height: 400px;
+    background-color: #000000; 
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    color: #ffffff;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    border-left: 6px solid var(--main-black);
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+
+.info-section {
+    padding: 80px 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.course-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    text-align: left; 
+}
+
+.course-table td {
+    padding: 20px;
+    background: var(--light-bg);
+    vertical-align: middle;
+    color: var(--deep-gray);
+}
+
+.course-table td:first-child {
+    font-weight: 700;
+    color: var(--main-black);
+    width: 40%;
+    border-radius: 5px 0 0 5px;
+    border-left: 4px solid var(--medium-gray);
+}
+
+.course-table td:last-child {
+    color: var(--medium-gray);
+    border-radius: 0 5px 5px 0;
+}
+
+.toc-section {
+    padding: 40px 0 100px;
+}
+
+.section-title {
+    color: var(--main-black);
+    margin-bottom: 30px;
+    border-left: 5px solid var(--main-black);
+    padding-left: 15px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.toc-wrapper {
+    background: var(--light-bg);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.toc-list {
+    list-style: none;
+}
+
+.toc-list li {
+    border-bottom: 1px solid var(--border-color);
+    transition: 0.3s;
+}
+
+.toc-list a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 20px;
+    color: var(--main-black);
+}
+
+.toc-number {
+    background: var(--main-black);
+    color: var(--white); 
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px; 
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.toc-text {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.toc-page {
+    color: var(--medium-gray);
+    font-weight: bold;
+}
+
+.toc-list li:hover {
+    background-color: #2a2a2a; 
+}
+
+
+#general-info {
+    padding: 60px 0;
+    width: 80%;
+    margin: auto;
+    border-top: 2px solid var(--border-color);
+}
+
+#general-info h2 {
+    font-size: 2rem;
+    color: var(--main-black);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.course-identification {
+    margin-bottom: 50px;
+}
+
+.course-identification h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: var(--main-black);
+    display: flex;
+    align-items: center;
+}
+
+.course-identification li {
+    padding: 12px 20px;
+    background: var(--light-bg);
+    margin-bottom: 8px;
+    border-left: 3px solid var(--medium-gray);
+    font-size: 0.95rem;
+    color: var(--deep-gray);
+}
+
+.course-identification li strong {
+    color: var(--main-black);
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.course-identification p {
+    color: var(--deep-gray);
+    line-height: 1.8;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+
+table[border="1"] {
+    border: 1px solid var(--border-color) !important;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+    background-color: var(--light-bg);
+}
+
+table[border="1"] th {
+    background-color: #252525; 
+    color: var(--main-black);
+    text-align: left;
+    padding: 15px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+table[border="1"] td {
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    color: var(--deep-gray);
+    font-size: 0.95rem;
+}
+
+table tr:nth-child(even) {
+    background-color: #252525; 
+}
+
+table tr:hover td {
+    background-color: #333333;
+    transition: 0.2s;
+}
+
+
+@media (max-width: 768px) {
+    .container, #general-info { width: 95%; }
+    .hero-content h1 { font-size: 2rem; }
+    
+    .course-table td {
+        display: block;
+        width: 100% !important;
+        text-align: left;
+    }
+    .course-table td:first-child {
+        border-radius: 5px 5px 0 0;
+        padding-bottom: 5px;
+    }
+    .course-table td:last-child {
+        border-radius: 0 0 5px 5px;
+        padding-top: 5px;
+        border-left: 4px solid var(--medium-gray);
+    }
+    .nav-links { display: none; }
+    
+    table[border="1"] {
+        display: block;
+        overflow-x: auto;
+    }
+}
+.my-table {
+    width: 90%; 
+    max-width: 1000px;
+    margin: 40px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden; 
+    border: 1px solid var(--border-color);
+}
+
+.my-table th {
+    background-color: var(--main-black);
+    color: var(--white);
+    padding: 15px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-align: center; 
+    letter-spacing: 1px;
+}
+
+.my-table td {
+    padding: 15px;
+    font-size: 0.95rem;
+    color: var(--deep-gray);
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border-color);
+    text-align: center;
+}
+
+
+.my-table tr:hover td {
+    background-color: var(--light-bg);
+    transition: 0.3s;
+}
+
+
+.my-table tr:last-child td {
+    border-bottom: none;
+}
+
+
+@media (max-width: 768px) {
+    .my-table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+    }
+}
+   
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.member-card {
+  /* الخلفية التي اخترتها مع إضافة تدرج خفيف ليعطي عمق */
+  background: #140101; 
+  /* حدود ناعمة بلون رمادي داكن جداً بدلاً من الأسود التام */
+  border: 1px solid #2a2a2a; 
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-5px); /* حركة خفيفة للأعلى عند التمرير */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  border-color: #444; /* تفتيح الحدود عند التمرير */
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #1a1a1a; /* إطار للصورة ليفصلها عن الخلفية الداكنة */
+  object-fit: cover;
+}
+
+.names {
+  margin-bottom: 15px;
+  /* تغيير اللون الأزرق الفاتح إلى لون أهدأ أو إبقائه حسب ذوقك */
+  border-bottom: 2px solid #333; 
+  padding-bottom: 10px;
+}
+
+.ar-name { 
+  font-family: 'Tajawal', 'Arial', sans-serif; 
+  color: #ffffff; /* أبيض ناصع للاسم العربي */
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.en-name { 
+  font-family: 'Segoe UI', sans-serif; 
+  color: #b0b0b0; /* رمادي فاتح للاسم الإنجليزي ليعطي تراتبية بصرية */
+  font-size: 1rem; 
+  font-weight: 400;
+}
+
+.details {
+  color: #888; /* لون باهت للمعلومات الإضافية */
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
