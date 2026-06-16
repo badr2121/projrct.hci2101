@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فريق العمل - Team Members</title>
+    <link rel="stylesheet" href="index-light.css">
+    <style>
+    
+        .team-section {
+            padding: 120px 0 60px 0;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .team-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--main-black);
+            font-size: 2rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 15px;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 0 20px;
+        }
+        .member-card {
+            background: #f9f9f9;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .member-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.06);
+        }
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid var(--main-black);
+        }
+        .names-box {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .ar-name {
+            font-size: 1.25rem;
+            color: var(--main-black);
+            margin: 0 0 5px 0;
+        }
+        .en-name {
+            font-size: 1rem;
+            color: var(--medium-gray);
+            margin: 0;
+            font-weight: 500;
+        }
+        .info-box {
+            text-align: right;
+            font-size: 0.9rem;
+            color: var(--deep-gray);
+            line-height: 1.6;
+        }
+        .info-box p {
+            margin: 8px 0;
+        }
+      
+        @media (max-width: 768px) {
+            .team-section { padding-top: 100px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">ETEC</div>
+            <ul class="nav-links">
+                <li><a href="index-ar-light.html">العودة للموقع الدراسي / Back to Course Spec</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="team-section">
+        <h1 class="team-title">فريق تطوير الموقع <br><span style="font-size: 1.2rem; color: var(--medium-gray);">Website Development Team</span></h1>
+        
+        <div class="team-grid">
+            
+            <div class="member-card">
+                <img src="PHOTO-2026-02-28-20-09-26.jpg" alt="بدر سامي الفهمي" class="profile-img">
+                <div class="names-box">
+                    <h2 class="ar-name">بدر سامي الفهمي</h2>
+                    <h2 class="en-name">Badr Sami Alfhmi</h2>
+                </div>
+                <div class="info-box">
+                    <p><strong>الرقم الجامعي / ID:</strong> 446002039</p>
+                    <p><strong>البريد / Email:</strong> s446002039@uqu.edu.sa</p>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <img src="osied.jpeg" alt="اسيد عمر المربعي" class="profile-img">
+                <div class="names-box">
+                    <h2 class="ar-name">اسيد عمر المربعي</h2>
+                    <h2 class="en-name">Osaid Omar Almarbaie</h2>
+                </div>
+                <div class="info-box">
+                    <p><strong>الرقم الجامعي / ID:</strong> 446005046</p>
+                    <p><strong>البريد / Email:</strong> s446005046@uqu.edu.sa</p>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <img src="ahmed.jpg" alt="احمد حسن الزهراني" class="profile-img">
+                <div class="names-box">
+                    <h2 class="ar-name">احمد حسن الزهراني</h2>
+                    <h2 class="en-name">Ahmed Hassan Alzahrani</h2>
+                </div>
+                <div class="info-box">
+                    <p><strong>الرقم الجامعي / ID:</strong> 446005583</p>
+                    <p><strong>البريد / Email:</strong> s446005483@uqu.edu.sa</p>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <img src="hamza.jpg" alt="حمزه سامي خياط" class="profile-img">
+                <div class="names-box">
+                    <h2 class="ar-name">حمزه سامي خياط</h2>
+                    <h2 class="en-name">Hamza Sami Khayyat</h2>
+                </div>
+                <div class="info-box">
+                    <p><strong>الرقم الجامعي / ID:</strong> 446002458</p>
+                    <p><strong>البريد / Email:</strong> s446002458@uqu.edu.sa</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
